@@ -1,0 +1,9 @@
+{{#if model.customerTypes.length}}
+  {{#each model.customerTypes as |customerType|}}
+    {{#link-to "categories.category.customer-type" customerType}}
+      {{customerType}}
+    {{/link-to}}<br />
+  {{/each}}
+  <br />
+{{/if}}
+{{outlet}}

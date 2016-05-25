@@ -1,0 +1,7 @@
+{{#each model as |category|}}
+  {{#link-to category.route category.id}}
+    {{category.title}}<br />
+  {{/link-to}}
+{{/each}}
+<br />
+{{outlet}}
